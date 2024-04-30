@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "DM Serif Display";
+}
+body{
+	background: #4F5E1E;
+}
+.wrapper{
+	width: 1280px;
+	margin: auto;
+}
+header{
+	height: 100vh;
+	background-image: url(../img/river.png);
+	background-size:cover ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.header__item{
+	height: 200px;
+	background: rgba(0, 0, 0, 0.29);
+}
+.header__headline{
+	font-family: "Permanent Marker",cursive;
+	font-size: 120px;
+	color: white;
+	text-align: center;
+}
+main{
+	height: 1400px;
+	display: grid;
+	grid-template: repeat(14, 1fr)/repeat(12, 1fr);
+}
+main>.main__img:nth-child(1){
+	grid-row:1/span 3 ;
+	grid-column: 1/span 7;
+	background-image: url(../img/grizlli.png);
+}
+main>.main__img:nth-child(2){
+	grid-row: 1/span 4;
+	grid-column: 8/span 5;
+	background-image: url(../img/video.png);
+	background-size:cover ;
+}
+main>.main__img:nth-child(3){
+	grid-row: 4/span 5;
+	grid-column: 1/span 7;
+	background-image: url(../img/small_mush.png);
+}
+main>.main__img:nth-child(4){
+	grid-row: 5/span 4;
+	grid-column: 8/span 5;
+	background-image: url(../img/big_mush.png);
+}
+main>.main__img:nth-child(5){
+	grid-row: 9/span 3;
+	grid-column:5/-1 ;
+	background-image: url(../img/elk.png);	
+}
+main>.main__img:nth-child(6){
+	grid-row: -4/-1;
+	grid-column:1/7	;
+	background-image: url(../img/hvoya.png);
+
+}
+main>.main__text:nth-child(7){
+	background: rgba(255, 255, 255, 0.8);
+	grid-row: 2/7;
+	grid-column: 1/4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+h3{
+	font-size: 48px;
+	text-align: center;
+	color: #535353;
+}
+main>.main__text:nth-child(8){
+	background: rgba(255, 255,255, 0.8);
+	grid-row: 7/9;
+	grid-column: 5/9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+hr{
+  background-color: #000;
+  height: 5px;  
+  border: 0;
+  width: 300px;
+}
+main>.main__text:nth-child(9)>.main__title{
+  padding: 40px;
+  background-size: 24px;
+  line-height: 32.9px;
+}
+main>.main__text:nth-child(9){
+  background: rgba(255, 255, 255, 0.8);
+  grid-row: 9/12;
+  grid-column: 1/span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main>.main__text:nth-child(10)>.main__title{
+  padding:25px 40px;
+  background-size: 24px;
+  line-height: 32.9px;
+}
+main>.main__text:nth-child(10){
+  background: rgba(255, 255, 255, 0.8);
+  grid-row: 13/-1;
+  grid-column: -7/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main>.main__text:nth-child(10)>hr{
+  margin: 0 auto;
+  width: 320px;
+}
+footer{
+  background: url(../img/fog.png);
+  height: 300px;
+}
+.footer__item{
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__headline{
+  font-family: Permanent Marker;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 117px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
